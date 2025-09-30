@@ -17,7 +17,6 @@ module.exports = {
       en: "Makipag usap kay Simsimi via command o reply mode."
     },
     category: "fun",
-    usePrefix: false 
   },
 
   onStart: async function ({ api, event, args }) {
