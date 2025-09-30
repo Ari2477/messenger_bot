@@ -7,7 +7,7 @@ const API_KEY = 'MAINPOINT';
 const LANGUAGE = 'bn'; 
 
 module.exports.config = {
-  name: "bot",
+  name: "chat",
   aliases: ["talk", "sim"],
   version: "1.0",
   author: "Hridoy",
