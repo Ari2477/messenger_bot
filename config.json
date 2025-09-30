@@ -1,6 +1,6 @@
 {
     "botName": "BOT",
-    "prefix": ".",
+    "prefix": "/",
     "adminName": "Ari",
     "adminUIDs": ["61577110900436"]
   }
