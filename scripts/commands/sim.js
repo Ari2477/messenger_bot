@@ -7,21 +7,17 @@ let lastBotReplies = new Set();
 module.exports = {
   config: {
     name: "sim",
-    version: "1.2",
+    version: "1.5",
     author: "Ari",
-    countDown: 1,
     role: 0,
-    usePrefix: false,
     shortDescription: {
-      en: "Chat with Simsimi"
+      en: "Simsimi auto chat + command"
     },
     longDescription: {
-      en: "Simsimi chat mode (command + auto reply)"
+      en: "Makipag usap kay Simsimi via command o reply mode."
     },
     category: "fun",
-    guide: {
-      en: "{pn} <message>"
-    }
+    usePrefix: false 
   },
 
   onStart: async function ({ api, event, args }) {
@@ -30,7 +26,7 @@ module.exports = {
     return sendSimSimi(api, event, q);
   },
 
-  onReply: async function ({ api, event }) {
+  onChat: async function ({ api, event }) {
     if (!event.messageReply) return;
     if (lastBotReplies.has(event.messageReply.messageID)) {
       return sendSimSimi(api, event, event.body);
