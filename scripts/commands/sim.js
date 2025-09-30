@@ -15,7 +15,7 @@ module.exports.config = {
   description: "Talk with Simsimi",
   category: "Fun",
   guide: "{pn} [message]",
-  usePrefix: true
+  usePrefix: false
 };
 
 async function sendSimSimi(api, event, text) {
